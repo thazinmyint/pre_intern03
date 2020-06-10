@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment Bootstrap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrapproject/bootstrap/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            .holiday{
+                font-family:oblique;
+            }
+            .img-fluid
+            { 
+                max-width: 80%;
+                height: auto;
+            }
+              
+              .icon > div{
+                  padding: 20px;
+                  margin-left: 30px;
+              }
+              p{
+                  padding-top: 10px;
+                  font-weight: bold;
+              }
+              h2{
+                  font-weight: bold;
+                  font-family: Arial, Helvetica, sans-serif
+              }
+              .picture > div{
+                  margin: 55px;
+              }
+              ul li{
+                  padding-left: 0px;
+                  font-weight: bold;
+                  list-style: none;
+              }
+              .card{
+                  position: absolute;
+                  z-index: 1;
+                  margin-top: 100px;
+                  margin-left:700px;
+                  width: 300px;
+                  height: auto;
+              }
+              
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row" style="margin-left: 160px;">
+                <div class="col-md-3">
+                    <h2 class="holiday mt-2">Holiday House</h2>
+
+                </div>
+                <div class="col-md-8">
+                    <ul class="nav mt-2">
+                        <li class="nav-item">
+                          <a class="nav-link text-uppercase text-success" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark" href="#">About Us</a>
+                          </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle text-uppercase text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                              service</a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-uppercase text-dark" href="#">gallery</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-uppercase text-dark" href="#">contacts</a>
+                        </li>
+                      
+                      <form class="navbar-form navbar-right mt-2" role="search">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                     </form>
+                     </ul>
+                    
+                   
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+            <img src="image/house4.jpg" style="width: 100%; height: 500px;z-index: 1;">
+            
+            <div class="arrow" style="position: absolute;z-index: 1;">
+                <i class="fa fa-chevron-left bg-success" style="color: white;padding: 10px;
+                 width: 40px;height: 40px; font-size: 20px; margin-left: 150px; margin-top: 400px;"></i>
+
+                 <i class="fa fa-chevron-right bg-success" style="color: white;padding: 10px;
+                 width: 40px;height: 40px; font-size: 20px; margin-left: 30px; margin-top: 400px;"></i>
+
+            </div>
+            <div class="card">
+                <div class="card-body bg-dark">
+                  <h3 class="text-uppercase text-light" style="font-family: Arial, Helvetica, sans-serif;">spend your<br>dreram holiday!</h3>
+                  <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-danger">Learn More</a>
+                </div>
+              </div>
+           </div>
+
+            <!-- <div class="row">
+                
+            </div> -->
+        </div>
+        <div class="container-fluid" style="background-color: #efe9e9">
+            <div class="row icon">
+                <div class="col-md-2 mt-3" style="margin-left: 100px;">
+                    <i class="fa fa-key ml-4" style="font-size: 60px; align-content: center;"></i><br>
+                    <p class="text-danger">Rent direct from owner</p>
+
+                </div>
+                <div class="col-md-2 mt-3">
+                    <i class="fa fa-money ml-4" style="font-size: 60px;"></i><br>
+                    <p class="text-danger">No Commission</p>
+
+                </div>
+                <div class="col-md-2 mt-3">
+                    <i class="fa fa-calendar ml-4" style="font-size: 60px;"></i><br>
+                    <p class="text-danger">Flexible rental dates</p>
+
+                </div>
+                <div class="col-md-3 mt-3">
+                    <i class="fa fa-eye-slash ml-4" style="font-size: 60px;"></i><br>
+                    <p class="text-danger">Space & privacy</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <h2 class="mt-5 mx-auto text-center text-uppercase ">top holiday destinations</h2>
+        </div>
+
+        <div class="container">
+            <div class="row icon">
+                <div class="col-md-2 mt-3">
+                    <button type="button" class="btn btn-success" style="width: 200px;">Omaha Beach</button>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <button type="button" class="btn btn-light" style="width: 200px;">Lake Wanaka</button>
+                     
+                </div>
+                <div class="col-md-2 mt-3">
+                    <button type="button" class="btn btn-light" style="width: 200px;">Mangawhai Heads</button>
+
+                </div>
+                <div class="col-md-2 mt-3">
+                    <button type="button" class="btn btn-light" style="width: 200px;">Taupo Central</button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                
+                    <img class="img-fluid" src="image/house1.jpg">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor exercitationem facere</p>
+                  </div>
+              
+                  <div class="col-md-4">
+                
+                    <img class="img-fluid" src="image/house7.jpg"  alt="Responsive image">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor exercitationem facere</p>
+                  </div>
+
+                  <div class="col-md-4">
+                
+                    <img class="img-fluid" src="image/house3.jpg"  alt="Responsive image">
+                      <p style="width: 330px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor exercitationem facere</p>
+                  </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  
+                      <img class="img-fluid" src="image/house4.jpg">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor exercitationem facere</p>
+                    </div>
+                
+                    <div class="col-md-4">
+                  
+                      <img class="img-fluid" src="image/house5.jpg"  alt="Responsive image">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor exercitationem facere</p>
+                    </div>
+  
+                    <div class="col-md-4">
+                  
+                      <img class="img-fluid" src="image/house6.jpg"  alt="Responsive image">
+                        <p style="width: 330px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor exercitationem facere</p>
+                    </div>
+                </div>
+
+        </div>
+        <div class="container-fluid mt-5" style="background-color: #efe9e9">
+            
+            <h2 class="mt-5 text-center text-uppercase">TESTMONIALS </h2>
+            <div class="row picture">
+             <div class="col-sm-3 col-md-4 col-lg-3">
+                 <img class="img-fluid ml-5" src="image/people1.webp" style="border-radius: 60%;" width="200px;"> <br>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officia fuga eaque molestiae non, 
+                     dolore possimus incidunt, iure a assumenda autem placeat ducimus quod vitae. Alias totam repellendus quae molestias?
+                </p>
+             </div>
+
+             <div class="col-sm-3 col-md-4 col-lg-3">
+                <img class="img-fluid ml-5" src="image/people2.jpg" style="border-radius: 60%;" width="200px;"> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officia fuga eaque molestiae non, 
+                    dolore possimus incidunt, iure a assumenda autem placeat ducimus quod vitae. Alias totam repellendus quae molestias?
+               </p>
+            </div>
+
+            <div class="col-sm-3 col-md-4 col-lg-3">
+                <img class="img-fluid ml-5" src="image/people3.webp" style="border-radius: 60%;" width="200px;"> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officia fuga eaque molestiae non, 
+                    dolore possimus incidunt, iure a assumenda autem placeat ducimus quod vitae. Alias totam repellendus quae molestias?
+               </p>
+            </div>
+         </div>
+        </div>
+        <div class="container-fluid bg-success">
+
+            <div class="row picture">
+             <div class="col-lg-3 col-md-4">
+                <h2 class="mt-5 text-left text-uppercase text-light">about </h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officia fuga eaque molestiae non, 
+                     dolore possimus incidunt, iure a assumenda autem placeat ducimus quod vitae. Alias totam repellendus quae molestias?
+                </p><br><br><br><br>
+                <p>
+                    Holiday homes for rent © 2019<br>
+                    All rights reserved, Term of use | Policy
+                </p>
+             </div>
+
+             <div class="col-lg-3 col-md-4">
+                <h2 class="mt-5 text-left text-uppercase text-light" style="padding-left: 35px;">useful advice </h2>
+                 <ul>
+                     <li class="text-uppercase">law support</li>
+                     <li class="text-uppercase">insurance</li>
+                     <li class="text-uppercase">party decoration</li>
+                     <li class="text-uppercase">partners program</li>
+                 </ul><br><br><br><br><br>
+                 <i class="fa fa-twitter mt-5" style="font-size: 30px; color: white; padding-left: 50px;"></i>
+                 <i class="fa fa-facebook" style="font-size: 30px; color: white; padding-left: 30px;"></i>
+                 <i class="fa fa-tumblr" style="font-size: 30px; color: white; padding-left: 30px;"></i>
+                 <i class="fa fa-feed" style="font-size: 30px; color: white; padding-left: 30px;"></i>
+             </div>
+
+             <div class="col-lg-3 col-md-4">
+                <h2 class="mt-5 text-left text-uppercase text-light">get in touch</h2>
+                
+                <input type="text"  class="form-control form-input-text form-xs" style="width: 90%;" placeholder="Name" required="required" name="name"><br>
+               
+                <input type="text"  class="form-control form-input-text form-xs" style="width: 90%;" placeholder="Email" required="required" name="email"><br>
+                
+                <input type="text"  class="form-control form-input-text form-xs" style="width: 90%;" placeholder="Phone" required="required" name="phone"><br>
+                
+                <textarea class="form-control form-input-text message-area form-xs" style="width: 90%;" placeholder="Message" required="required" name="message"></textarea>
+                <button class="btn btn-danger text-uppercase mt-3">Send Message</button>
+             </div>
+
+         </div>
+        </div>
+           
+
+        
+           
+
+            
+        
+
+
+    </body>
+</html>
