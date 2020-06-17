@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+       <script>
+           
+         
+           function btnenable(text)
+          {
+              var btn=document.getElementById("sub");
+              if(text.value!=""){
+               btn.disabled=false;
+              }
+              else
+              {
+                btn.disabled=false;
+              }
+              
+
+          }
+        
+        
+        </script>
+        <title>Preintern Group</title>
+    </head>
+    <body>
+       
+       <form id="form">
+           <input id="name" type="text" placeholder="Add todo-task" onkeyup="btneanble(this)">
+           <input type="submit" id="sub">
+
+       </form>
+       </body>
+      
+</html>
