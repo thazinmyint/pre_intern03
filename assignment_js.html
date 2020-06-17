@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrapproject/bootstrap/css/bootstrap.min.css">
+
+        <script type="text/javascript" src="jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrapproject/bootstrap/js/bootstrap.bundle.min.js"></script>
+       <script>
+           document.addEventListener('DOMContentLoaded', function(){
+                document.querySelector('#main').onclick= function(){
+
+                            document.querySelectorAll('.dropdown-color').forEach(function(a){
+                                   a.onclick = function(){
+                                       document.querySelector('#hello').style.color = a.dataset.color;
+                                      
+
+                                   };
+
+                               }); 
+
+                    };
+            }); 
+            
+        </script>
+        <title>Preintern Group</title>
+    </head>
+    <body>
+       <h1 id="hello">Hello!Welocome to Our PreIntern Group</h1>
+      
+
+       <div class="dropdown" id="main">
+        <a class="btn btn-white dropdown-toggle" href="#" id="change" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Colors
+        </a>
+      
+        <div class="dropdown-menu" id="submain" aria-labelledby="dropdownMenuLink">
+          
+          <a class="dropdown-item dropdown-color" href="#" data-color="blue">Blue</a>
+          <a class="dropdown-item dropdown-color" href="#" data-color="green">Green</a>
+         
+          <a class="dropdown-item dropdown-color" href="#" data-color="black">Black</a>
+          <a class="dropdown-item dropdown-color" href="#" data-color="red">Red</a>
+        </div>
+      </div>
+      
+</html>
