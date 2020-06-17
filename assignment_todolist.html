@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+       <script>
+          
+          function disablebtn(){
+               
+                if(textbox.value!=''){
+                    document.getElementById('subbutton').disabled=false;
+                }
+                else{
+                    document.getElementById('subbutton').disabled=true;
+                }
+            }
+        
+        </script>
+        <title>Todolist Assignment</title>
+    </head>
+    <body>
+       
+      <input id="textbox" autocomplete="off" type="text" autofocus placeholder="Add todo-task" onkeyup="disablebtn()">
+      <input type="submit" id="subbutton" disabled="false">
+
+
+           </body>
+
+       
+      
+</html>
