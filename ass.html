@@ -3,33 +3,28 @@
     <head>
        
        <script>
-           
-         
-           function btnenable(text)
-          {
-              var btn=document.getElementById("sub");
-              if(text.value!=""){
-               btn.disabled=false;
-              }
-              else
-              {
-                btn.disabled=false;
-              }
-              
-
-          }
-        
+          
+          function disablebtn(){
+               
+                if(textbox.value!=''){
+                    document.getElementById('subbutton').disabled=false;
+                }
+                else{
+                    document.getElementById('subbutton').disabled=true;
+                }
+            }
         
         </script>
-        <title>Preintern Group</title>
+        <title>Todolist Assignment</title>
     </head>
     <body>
        
-       <form id="form">
-           <input id="name" type="text" placeholder="Add todo-task" onkeyup="btneanble(this)">
-           <input type="submit" id="sub">
+      <input id="textbox" autocomplete="off" type="text" autofocus placeholder="Add todo-task" onkeyup="disablebtn()">
+      <input type="submit" id="subbutton" disabled="false">
 
-       </form>
-       </body>
+
+           </body>
+
+       
       
 </html>
