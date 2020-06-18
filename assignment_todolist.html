@@ -3,27 +3,54 @@
     <head>
        
        <script>
-          
-          function disablebtn(){
-               
-                if(textbox.value!=''){
-                    document.getElementById('subbutton').disabled=false;
-                }
-                else{
-                    document.getElementById('subbutton').disabled=true;
-                }
-            }
-        
-        </script>
-        <title>Todolist Assignment</title>
-    </head>
-    <body>
-       
-      <input id="textbox" autocomplete="off" type="text" autofocus placeholder="Add todo-task" onkeyup="disablebtn()">
-      <input type="submit" id="subbutton" disabled="false">
+         
+                              function disablebtn(){
+                                    
+                                    if(document.querySelector('#textbox').value!=''){
+                                        document.getElementById('subbutton').disabled=false;
+                                    }
+                                    else{
+                                        document.getElementById('subbutton').disabled=true;
+                                }
+                                }
+                        
+                           
+                            document.addEventListener('DOMContentLoaded', () => {
+
+                            document.querySelector('#todo-list').onsubmit = () =>{
+
+                                document.getElementById('subbutton').disabled=true;
+                                const li = document.createElement('li');
+                                li.innerHTML = document.querySelector('#textbox').value;
+
+                                document.querySelector('#list').append(li);
+
+                                document.querySelector('#textbox').value = " ";
+
+                                return false;
+                                
+
+                        };
+
+                      
+                    });        
+                </script>
+                <title>Todolist</title>
+            </head>
+            <body>
+
+                <h1>To Do List</h1>
+                <ul id="list">
+
+                </ul>
+                <form id="todo-list">
+                    <input id="textbox" autocomplete="off" type="text" autofocus placeholder="Add todo-task" onkeyup="disablebtn()">
+                    <input type="submit" id="subbutton" disabled="false">
+                </form>
+            
 
 
-           </body>
+    </body>
 
        
       
